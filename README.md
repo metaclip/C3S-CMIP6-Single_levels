@@ -1,2 +1,2 @@
 # metaclipR_C3S-CICA
-Metaclip implementation for the Copernicus C3S Interactive Atlas 
+A metaclipR extension for the Copernicus C3S Interactive Atlas 
