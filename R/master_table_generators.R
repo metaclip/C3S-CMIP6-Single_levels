@@ -168,9 +168,13 @@ ids.c3s <- paste(c3s.table$experiment, c3s.table$model_ID, sep = "/") %>% unique
 ids.atlas <- paste(ds.table$Experiment, ds.table$GCM, sep = "/") %>% unique()
 ind <- match(ids.c3s, ids.atlas)
 
-doi.table <- cbind.data.frame("model_ID" = ds.table[ind, "GCM"],
+
+experiment <- sapply(ids.c3s, "strsplit", split = "/") %>% sapply(., "extract2", 1)
+modelID <- sapply(ids.c3s, "strsplit", split = "/") %>% sapply(., "extract2", 2)
+
+doi.table <- cbind.data.frame("model_ID" = modelID,
                               "dataset_ref" = ids.c3s,
-                              "experiment" = ds.table[ind,"Experiment"],
+                              "experiment" = experiment,
                               "doi" = ds.table[ind,"doi"],
                               "atlas" = ifelse(is.na(ds.table[ind,"doi"]), 0, 1))
 
