@@ -6,19 +6,19 @@
 "ACCESS-CM2","historical/ACCESS-CM2","historical","https://doi.org/10.22033/ESGF/CMIP6.4271",1
 "ACCESS-ESM1-5","historical/ACCESS-ESM1-5","historical","https://doi.org/10.22033/ESGF/CMIP6.4272",1
 "AWI-CM-1-1-MR","historical/AWI-CM-1-1-MR","historical","https://doi.org/10.22033/ESGF/CMIP6.2686",1
-"AWI-ESM-1-1-LR","historical/AWI-ESM-1-1-LR","historical","https://doi.org/10.26050/WDCC/AR6.C6CMAWAWMhi",0
+"AWI-ESM-1-1-LR","historical/AWI-ESM-1-1-LR","historical","https://doi.org/10.22033/ESGF/CMIP6.9328",0
 "BCC-CSM2-MR","historical/BCC-CSM2-MR","historical","https://doi.org/10.22033/ESGF/CMIP6.2948",1
-"BCC-ESM1","historical/BCC-ESM1","historical","https://doi.org/10.26050/WDCC/AR6.C6CMBCBEhi",0
-"CMCC-CM2-HR4","historical/CMCC-CM2-HR4","historical","https://doi.org/10.26050/WDCC/AR6.C6CMCMCCHhi",0
-"CMCC-CM2-SR5","historical/CMCC-CM2-SR5","historical","http://doi.org/10.22033/ESGF/CMIP6.3825",1
-"CMCC-ESM2","historical/CMCC-ESM2","historical","https://doi.org/10.26050/WDCC/AR6.C6CMCMCMChi",0
+"BCC-ESM1","historical/BCC-ESM1","historical","https://doi.org/10.22033/ESGF/CMIP6.2949",0
+"CMCC-CM2-HR4","historical/CMCC-CM2-HR4","historical","https://doi.org/10.22033/ESGF/CMIP6.3823",0
+"CMCC-CM2-SR5","historical/CMCC-CM2-SR5","historical","https://doi.org/10.22033/ESGF/CMIP6.3825",1
+"CMCC-ESM2","historical/CMCC-ESM2","historical","https://doi.org/10.22033/ESGF/CMIP6.13195",0
 "CNRM-CM6-1","historical/CNRM-CM6-1","historical","https://doi.org/10.22033/ESGF/CMIP6.4066",1
 "CNRM-CM6-1-HR","historical/CNRM-CM6-1-HR","historical","https://doi.org/10.22033/ESGF/CMIP6.4067",1
 "CNRM-ESM2-1","historical/CNRM-ESM2-1","historical","https://doi.org/10.22033/ESGF/CMIP6.4068",1
 "CANESM5","historical/CANESM5","historical","https://doi.org/10.22033/ESGF/CMIP6.3610",1
 "EC-EARTH3-AERCHEM","historical/EC-EARTH3-AERCHEM","historical","https://doi.org/10.22033/ESGF/CMIP6.4701",0
 "EC-EARTH3-CC","historical/EC-EARTH3-CC","historical","https://doi.org/10.22033/ESGF/CMIP6.4702",0
-"FGOALS-F3-L","historical/FGOALS-F3-L","historical","https://doi.org/10.26050/WDCC/AR6.C6CMCASFFhi",0
+"FGOALS-F3-L","historical/FGOALS-F3-L","historical","https://doi.org/10.22033/ESGF/CMIP6.3355",0
 "GFDL-ESM4","historical/GFDL-ESM4","historical","https://doi.org/10.22033/ESGF/CMIP6.8597",1
 "IITM-ESM","historical/IITM-ESM","historical","https://doi.org/10.22033/ESGF/CMIP6.3708",1
 "INM-CM4-8","historical/INM-CM4-8","historical","https://doi.org/10.22033/ESGF/CMIP6.5069",1
@@ -98,7 +98,7 @@
 "AWI-CM-1-1-MR","ssp2_4_5/AWI-CM-1-1-MR","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.2800",1
 "CESM2","ssp2_4_5/CESM2","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.7748",1
 "CMCC-CM2-SR5","ssp2_4_5/CMCC-CM2-SR5","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.3889",1
-"CMCC-ESM2","ssp2_4_5/CMCC-ESM2","ssp2_4_5","https://doi.org/10.26050/WDCC/AR6.C6SPCMCMCs245",0
+"CMCC-ESM2","ssp2_4_5/CMCC-ESM2","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.13252",0
 "CANESM5","ssp2_4_5/CANESM5","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.3685",1
 "CANESM5-CANOE","ssp2_4_5/CANESM5-CANOE","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.10270",0
 "FGOALS-G3","ssp2_4_5/FGOALS-G3","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.3469",1
@@ -109,7 +109,7 @@
 "MPI-ESM1-2-LR","ssp2_4_5/MPI-ESM1-2-LR","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.6693",1
 "MRI-ESM2-0","ssp2_4_5/MRI-ESM2-0","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.6910",1
 "TAIESM1","ssp2_4_5/TAIESM1","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.9808",0
-"MCM-UA-1-0","ssp2_4_5/MCM-UA-1-0","ssp2_4_5","https://doi.org/10.26050/WDCC/AR6.C6SPUAMUs245",0
+"MCM-UA-1-0","ssp2_4_5/MCM-UA-1-0","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.13896",0
 "NORESM2-LM","ssp2_4_5/NORESM2-LM","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.8253",1
 "NORESM2-MM","ssp2_4_5/NORESM2-MM","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.8255",1
 "CIESM","ssp2_4_5/CIESM","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.8858",0
@@ -118,7 +118,7 @@
 "EC-EARTH3-VEG","ssp2_4_5/EC-EARTH3-VEG","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.4882",1
 "EC-EARTH3-VEG-LR","ssp2_4_5/EC-EARTH3-VEG-LR","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.4883",0
 "FIO-ESM-2-0","ssp2_4_5/FIO-ESM-2-0","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.9209",0
-"KIOST-ESM","ssp2_4_5/KIOST-ESM","ssp2_4_5","http://doi.org/10.22033/ESGF/CMIP6.11244",1
+"KIOST-ESM","ssp2_4_5/KIOST-ESM","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.11244",1
 "GFDL-ESM4","ssp2_4_5/GFDL-ESM4","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.8686",1
 "IPSL-CM6A-LR","ssp2_4_5/IPSL-CM6A-LR","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.5264",1
 "CNRM-CM6-1","ssp2_4_5/CNRM-CM6-1","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.4189",1
@@ -127,7 +127,7 @@
 "ACCESS-CM2","ssp5_8_5/ACCESS-CM2","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.4332",1
 "CESM2","ssp5_8_5/CESM2","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.7768",1
 "CIESM","ssp5_8_5/CIESM","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.8863",0
-"CMCC-CM2-SR5","ssp5_8_5/CMCC-CM2-SR5","ssp5_8_5","http://doi.org/10.22033/ESGF/CMIP6.3896",1
+"CMCC-CM2-SR5","ssp5_8_5/CMCC-CM2-SR5","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.3896",1
 "CMCC-ESM2","ssp5_8_5/CMCC-ESM2","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.13259",0
 "CNRM-CM6-1","ssp5_8_5/CNRM-CM6-1","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.4224",1
 "CNRM-CM6-1-HR","ssp5_8_5/CNRM-CM6-1-HR","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.4225",1
@@ -136,7 +136,7 @@
 "EC-EARTH3-CC","ssp5_8_5/EC-EARTH3-CC","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.15636",0
 "EC-EARTH3-VEG-LR","ssp5_8_5/EC-EARTH3-VEG-LR","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.4915",0
 "FIO-ESM-2-0","ssp5_8_5/FIO-ESM-2-0","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.9214",0
-"KIOST-ESM","ssp5_8_5/KIOST-ESM","ssp5_8_5","http://doi.org/10.22033/ESGF/CMIP6.11249",1
+"KIOST-ESM","ssp5_8_5/KIOST-ESM","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.11249",1
 "MCM-UA-1-0","ssp5_8_5/MCM-UA-1-0","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.13901",0
 "MIROC-ES2L","ssp5_8_5/MIROC-ES2L","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.5770",1
 "MIROC6","ssp5_8_5/MIROC6","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.5771",1
@@ -148,7 +148,7 @@
 "AWI-CM-1-1-MR","ssp3_7_0/AWI-CM-1-1-MR","ssp3_7_0","https://doi.org/10.22033/ESGF/CMIP6.2803",1
 "CESM2","ssp3_7_0/CESM2","ssp3_7_0","https://doi.org/10.22033/ESGF/CMIP6.7753",1
 "CESM2-WACCM","ssp3_7_0/CESM2-WACCM","ssp3_7_0","https://doi.org/10.22033/ESGF/CMIP6.10102",1
-"CMCC-CM2-SR5","ssp3_7_0/CMCC-CM2-SR5","ssp3_7_0","http://doi.org/10.22033/ESGF/CMIP6.3890",1
+"CMCC-CM2-SR5","ssp3_7_0/CMCC-CM2-SR5","ssp3_7_0","https://doi.org/10.22033/ESGF/CMIP6.3890",1
 "CANESM5","ssp3_7_0/CANESM5","ssp3_7_0","https://doi.org/10.22033/ESGF/CMIP6.3690",1
 "CANESM5-CANOE","ssp3_7_0/CANESM5-CANOE","ssp3_7_0","https://doi.org/10.22033/ESGF/CMIP6.10271",0
 "EC-EARTH3-AERCHEM","ssp3_7_0/EC-EARTH3-AERCHEM","ssp3_7_0","https://doi.org/10.22033/ESGF/CMIP6.4889",0
@@ -181,7 +181,7 @@
 "CANESM5","ssp4_6_0/CANESM5","ssp4_6_0","https://doi.org/10.22033/ESGF/CMIP6.3693",0
 "MIROC6","ssp4_6_0/MIROC6","ssp4_6_0","https://doi.org/10.22033/ESGF/CMIP6.5766",0
 "MRI-ESM2-0","ssp4_6_0/MRI-ESM2-0","ssp4_6_0","https://doi.org/10.22033/ESGF/CMIP6.6926",0
-"FGOALS-G3","ssp4_3_4/FGOALS-G3","ssp4_3_4","https://doi.org/10.26050/WDCC/AR6.C6SPCASFGOs434",0
+"FGOALS-G3","ssp4_3_4/FGOALS-G3","ssp4_3_4","https://doi.org/10.22033/ESGF/CMIP6.3493",0
 "FGOALS-G3","ssp4_6_0/FGOALS-G3","ssp4_6_0","https://doi.org/10.22033/ESGF/CMIP6.3496",0
 "IPSL-CM6A-LR","ssp4_3_4/IPSL-CM6A-LR","ssp4_3_4","https://doi.org/10.22033/ESGF/CMIP6.5267",0
 "IPSL-CM6A-LR","ssp4_6_0/IPSL-CM6A-LR","ssp4_6_0","https://doi.org/10.22033/ESGF/CMIP6.5268",0
@@ -237,7 +237,7 @@
 "BCC-CSM2-MR","ssp2_4_5/BCC-CSM2-MR","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.3030",1
 "NESM3","ssp2_4_5/NESM3","ssp2_4_5","https://doi.org/10.22033/ESGF/CMIP6.8781",1
 "BCC-CSM2-MR","ssp3_7_0/BCC-CSM2-MR","ssp3_7_0","https://doi.org/10.22033/ESGF/CMIP6.3035",1
-"EC-EARTH3","ssp4_3_4/EC-EARTH3","ssp4_3_4","https://doi.org/10.26050/WDCC/AR6.C6SPEEE3s434",0
+"EC-EARTH3","ssp4_3_4/EC-EARTH3","ssp4_3_4","https://doi.org/10.22033/ESGF/CMIP6.4899",0
 "BCC-CSM2-MR","ssp5_8_5/BCC-CSM2-MR","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.3050",1
 "INM-CM5-0","ssp5_8_5/INM-CM5-0","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.12338",1
 "NESM3","ssp5_8_5/NESM3","ssp5_8_5","https://doi.org/10.22033/ESGF/CMIP6.8790",1
