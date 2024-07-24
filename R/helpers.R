@@ -1,3 +1,25 @@
+library(magrittr)
+library(metaclipR)  ## >= v1.4.0 ## remotes::install_github("METACLIP/metaclipR@devel")
+library(igraph)
+library(jsonlite)
+library(jsonld)
+
+## LOAD MASTER TABLES
+master <- read.csv("inst/C3S_CMIP6_single-levels_extended.csv")
+model.comp.master <- read.csv("inst/master_model_components.csv")
+variables.master <- read.csv("inst/master_variables.csv")
+
+
+#' @title SSP named individual matching
+#' @description
+#' Maps the SSP labels in master table with the corresponding vocabulary named individuals
+#' @param exp Character string. Experiment label as found in master table
+#' @return Character string. ipcc_terms named individual instance (ipcc: prefix)
+#' @note
+#' Compatible with vocabulary ipcc_terms >= 0.7
+#' @author juaco
+#' @keywords internal
+
 set.exp.nodename <- function(exp) {
     exp <- match.arg(exp, choices = c("historical",
                                       "ssp1_1_9",
