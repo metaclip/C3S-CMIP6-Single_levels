@@ -1,11 +1,8 @@
-library(magrittr)
-library(metaclipR)  ## remotes::install_github("METACLIP/metaclipR")
-library(igraph)
+source("R/helpers.R")
 
-## LOAD MASTER TABLES
-master <- read.csv("inst/C3S_CMIP6_single-levels_extended.csv")
-model.comp.master <- read.csv("inst/master_model_components.csv")
-variables.master <- read.csv("inst/master_variables.csv")
+
+output.dir = "CMIP6-C3S-METACLIP-Provenance"
+
 
 variables <- paste(master$temporal_resolution,
                    master$variable, sep = "-") %>% unique()
@@ -24,6 +21,22 @@ for (i in 1:length(variables)) {
         exp <- exps[j]
         exp.subset <- subset(var.subset, subset = experiment == exp)
         # gcms <- exp.subset$model_ID %>% unique()
+
+        ## Full path of the output json file
+        out.path <- file.path(output.dir,
+                              paste(exp.subset$temporal_resolution[1],
+                                    exp.subset$CMIP6_table_shortname[1],
+                                    sep = "-"),
+                              exp.subset$experiment[1])
+        if (!dir.exists(out.path)) {
+            dir.create(out.path, recursive = TRUE)
+        }
+        filename <- paste0("CMIP6-C3S-METACLIP-Provenance_",
+                           exp.subset$temporal_resolution[1], "_",
+                           exp.subset$CMIP6_table_shortname[1], "_",
+                           exp.subset$experiment[1],".jsonld")
+        output.file <- file.path(out.path, filename)
+
 
         ds.subset.list <- lapply(1:nrow(exp.subset), function(k) {
 
@@ -108,6 +121,9 @@ for (i in 1:length(variables)) {
                                c(getNodeIndexbyName(graph, dname),
                                  getNodeIndexbyName(graph, gcm.nodename)),
                                label = "ds:hadSimulationModel")
+
+            ## TODO: set.modelComp.nodename / lookup table
+            ## names(model.comp.master)
 
             ## ATMOS
             label <- gsub(".*_", "", model.info$atmos)
@@ -295,12 +311,21 @@ for (i in 1:length(variables)) {
         ens <- metaclipR.Ensemble(graph.list = ds.subset.list,
                                   disable.command = TRUE)
 
+        # plot(ens$graph, vertex.size = .25, edge.label.cex = .2, vertex.label.cex = .2)
+
         ## /////////////////////////////////////////////////////////////////////
         ## EXPORT JSON-LD ------------------------------------------------------
         ## /////////////////////////////////////////////////////////////////////
 
-        ## metaclipR::graph2json()
-        ## TO-DO: adapt graph2jason to use user-defined json templates
+        ## Copy template to output file
+        system(paste("cp inst/template.json", output.file))
+
+        ## Serialize output and write to json
+        metaclipR::graph2json(ens$graph, output.file, template = TRUE)
+
+        # ## Compact file
+        # minified_json <- jsonld::jsonld_compact(output.file, context = context)
+        # write(toJSON(minified_json, pretty = FALSE), output.file)
 
     }
 }
