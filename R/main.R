@@ -1,7 +1,10 @@
 source("R/helpers.R")
 
+## /////////////////////////////////////////
 
 output.dir = "CMIP6-C3S-METACLIP-Provenance"
+
+## ////////////////////////////////////////
 
 
 variables <- paste(master$temporal_resolution,
@@ -91,8 +94,7 @@ for (i in 1:length(variables)) {
                                label = "ds:hadExperiment")
 
             ## Modelling center
-            ind <- grep(paste0("^", gcm, "$"),
-                        model.comp.master$gcm,
+            ind <- grep(paste0("^", gcm, "$"), model.comp.master$gcm,
                         ignore.case = TRUE)
             model.info <- model.comp.master[ind,]
             insts <- model.info$institution %>% strsplit(., split = "-/-") %>% extract2(1)
@@ -122,12 +124,9 @@ for (i in 1:length(variables)) {
                                  getNodeIndexbyName(graph, gcm.nodename)),
                                label = "ds:hadSimulationModel")
 
-            ## TODO: set.modelComp.nodename / lookup table
-            ## names(model.comp.master)
-
             ## ATMOS
             label <- gsub(".*_", "", model.info$atmos)
-            comp.nodename <- paste0("c6m:", label)
+            comp.nodename <- paste0("c6m:", model.info$atmos)
             graph <- my_add_vertices(graph,
                                      name = comp.nodename,
                                      label = label,
@@ -139,7 +138,7 @@ for (i in 1:length(variables)) {
 
             ## LAND
             label <- gsub(".*_", "", model.info$land)
-            comp.nodename <- paste0("c6m:", label)
+            comp.nodename <- paste0("c6m:", model.info$land)
             graph <- my_add_vertices(graph,
                                      name = comp.nodename,
                                      label = label,
@@ -152,7 +151,7 @@ for (i in 1:length(variables)) {
             ## AEROSOL
             label <- gsub(".*_", "", model.info$aerosol)
             if (label != "none") {
-                comp.nodename <- paste0("c6m:", label)
+                comp.nodename <- paste0("c6m:", model.info$aerosol)
                 graph <- my_add_vertices(graph,
                                          name = comp.nodename,
                                          label = label,
@@ -166,7 +165,7 @@ for (i in 1:length(variables)) {
             ## ATMOS-CHEM
             label <- gsub(".*_", "", model.info$atmosChem)
             if (label != "none") {
-                comp.nodename <- paste0("c6m:", label)
+                comp.nodename <- paste0("c6m:", model.info$atmosChem)
                 graph <- my_add_vertices(graph,
                                          name = comp.nodename,
                                          label = label,
@@ -180,7 +179,7 @@ for (i in 1:length(variables)) {
             ## LAND-ICE
             label <- gsub(".*_", "", model.info$landIce)
             if (label != "none") {
-                comp.nodename <- paste0("c6m:", label)
+                comp.nodename <- paste0("c6m:", model.info$landIce)
                 graph <- my_add_vertices(graph,
                                          name = comp.nodename,
                                          label = label,
@@ -194,7 +193,7 @@ for (i in 1:length(variables)) {
             ## OCEAN
             label <- gsub(".*_", "", model.info$ocean)
             if (label != "none") {
-                comp.nodename <- paste0("c6m:", label)
+                comp.nodename <- paste0("c6m:", model.info$ocean)
                 graph <- my_add_vertices(graph,
                                          name = comp.nodename,
                                          label = label,
@@ -208,7 +207,7 @@ for (i in 1:length(variables)) {
             ## OCNBGCHEM
             label <- gsub(".*_", "", model.info$ocnBgchem)
             if (label != "none") {
-                comp.nodename <- paste0("c6m:", label)
+                comp.nodename <- paste0("c6m:", model.info$ocnBgchem)
                 graph <- my_add_vertices(graph,
                                          name = comp.nodename,
                                          label = label,
@@ -222,7 +221,7 @@ for (i in 1:length(variables)) {
             ## SEAICE
             label <- gsub(".*_", "", model.info$seaIce)
             if (label != "none") {
-                comp.nodename <- paste0("c6m:", label)
+                comp.nodename <- paste0("c6m:", model.info$seaIce)
                 graph <- my_add_vertices(graph,
                                          name = comp.nodename,
                                          label = label,
@@ -253,7 +252,7 @@ for (i in 1:length(variables)) {
 
             ## REALIZATION
             label <- info.gcm$realization_number
-            memname <- paste(label, dlabel, sep = ".")
+            memname <- paste(dlabel, label, sep = ".")
             graph <- my_add_vertices(graph,
                                      name = memname,
                                      label = label,
@@ -264,25 +263,25 @@ for (i in 1:length(variables)) {
                                label = paste0("ds:hasRealization"))
 
             ## TEMPORAL EXTENT
-            if (info.gcm$temporal_resolution != "fixed") {
+            # if (info.gcm$temporal_resolution != "fixed") {
 
-                datestring <- strsplit(info.gcm$date, split = "/")[[1]]
-                textentname <- paste("TemporalPeriod", randomName(), sep = ".")
-                start <- datestring[1]
-                end <- datestring[2]
-                label <- paste(substr(start, 1, 4), substr(end, 1, 4), sep = "-")
-                attr.list <- list("prov:startedAtTime" = start,
-                                  "prov:endedAtTime" = end)
-                graph <- my_add_vertices(graph,
-                                         name = textentname,
-                                         label = label,
-                                         className = "ds:TemporalPeriod",
-                                         attr = attr.list)
-                graph <- add_edges(graph,
-                                   c(getNodeIndexbyName(graph, dsubname),
-                                     getNodeIndexbyName(graph, textentname)),
-                                   label = paste0("ds:hasValidTemporalPeriod"))
-            }
+            datestring <- strsplit(info.gcm$date, split = "/")[[1]]
+            textentname <- paste("TemporalPeriod", randomName(), sep = ".")
+            start <- datestring[1]
+            end <- datestring[2]
+            label <- paste(substr(start, 1, 4), substr(end, 1, 4), sep = "-")
+            attr.list <- list("prov:startedAtTime" = start,
+                              "prov:endedAtTime" = end)
+            graph <- my_add_vertices(graph,
+                                     name = textentname,
+                                     label = label,
+                                     className = "ds:TemporalPeriod",
+                                     attr = attr.list)
+            graph <- add_edges(graph,
+                               c(getNodeIndexbyName(graph, dsubname),
+                                 getNodeIndexbyName(graph, textentname)),
+                               label = paste0("ds:hasValidTemporalPeriod"))
+            #}
 
             ## VARIABLE
             label <- info.gcm$CMIP6_table_shortname
@@ -291,11 +290,18 @@ for (i in 1:length(variables)) {
                                  info.gcm$variable, sep = "-")
             ind <- grep(fullvarname, variables.master$fullvarname)
             varnodename <- paste0("c6v:", variables.master[ind, "varID"])
+
+            attr.list <- list("ds:hasTimeFrequency" = tres)
+            if (tres == "fixed") {
+                descr <- "\'fixed\' variable, i.e. constant throughout the simulation period, does not vary with time"
+                attr.list[["dc:description"]] <- descr
+            }
+
             graph <- my_add_vertices(graph,
                                      name = varnodename,
                                      label = label,
                                      className = "ds:Variable",
-                                     attr = list("ds:hasTimeFrequency" = tres))
+                                     attr = attr.list)
             graph <- add_edges(graph,
                                c(getNodeIndexbyName(graph, dsubname),
                                  getNodeIndexbyName(graph, varnodename)),
