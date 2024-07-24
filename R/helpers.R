@@ -1,5 +1,5 @@
 library(magrittr)
-library(metaclipR)  ## >= v1.4.0 ## remotes::install_github("METACLIP/metaclipR@devel")
+library(metaclipR)  ## >= v1.4.0 ## remotes::install_github("METACLIP/metaclipR")
 library(igraph)
 library(jsonlite)
 library(jsonld)
