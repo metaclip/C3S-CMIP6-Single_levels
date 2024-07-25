@@ -31,13 +31,13 @@ for (i in 1:length(variables)) {
         out.path <- file.path(output.dir,
                               paste(exp.subset$temporal_resolution[1],
                                     exp.subset$CMIP6_table_shortname[1],
-                                    sep = "-"),
-                              exp.subset$experiment[1])
+                                    sep = "-")
+                              )
         if (!dir.exists(out.path)) {
             dir.create(out.path, recursive = TRUE)
         }
         filename <- paste0("CMIP6-C3S-METACLIP-Provenance_",
-                           exp.subset$temporal_resolution[1], "_",
+                           exp.subset$temporal_resolution[1], "-",
                            exp.subset$CMIP6_table_shortname[1], "_",
                            exp.subset$experiment[1],".jsonld")
         output.file <- file.path(out.path, filename)
