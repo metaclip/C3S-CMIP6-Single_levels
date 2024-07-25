@@ -330,6 +330,19 @@ for (i in 1:length(variables)) {
         # plot(ens$graph, vertex.size = .25, edge.label.cex = .2, vertex.label.cex = .2)
 
         ## /////////////////////////////////////////////////////////////////////
+        ## C3S DATASET CREATION-------------------------------------------------
+        ## /////////////////////////////////////////////////////////////////////
+
+        graph <- my_add_vertices(ens$graph,
+                                 name = "ds:Copernicus-CMIP6",
+                                 label = "Copernicus-CMIP6",
+                                 className = "ds:Dataset")
+        graph <- add_edges(graph,
+                           c(getNodeIndexbyName(graph, "ds:Copernicus-CMIP6"),
+                             getNodeIndexbyName(graph, ens$parentnodename)),
+                           label = paste0("prov:hadPrimarySource"))
+
+        ## /////////////////////////////////////////////////////////////////////
         ## EXPORT JSON-LD ------------------------------------------------------
         ## /////////////////////////////////////////////////////////////////////
 
