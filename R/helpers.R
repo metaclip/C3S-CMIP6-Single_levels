@@ -1,5 +1,5 @@
 library(magrittr)
-library(metaclipR)  ## >= v1.5.1 ## remotes::install_github("METACLIP/metaclipR")
+library(metaclipR)  ## >= v1.5.2 ## remotes::install_github("METACLIP/metaclipR")
 library(igraph)
 
 ## LOAD MASTER TABLES
