@@ -21,6 +21,8 @@ for (i in 1:length(variables)) {
 
     for (j in 1:length(exps)) {
 
+        message("i=",i," , j=",j)
+
         exp <- exps[j]
         exp.subset <- subset(var.subset, subset = experiment == exp)
         # gcms <- exp.subset$model_ID %>% unique()
@@ -350,12 +352,10 @@ for (i in 1:length(variables)) {
         system(paste("cp inst/template.json", output.file))
 
         ## Serialize output and write to json
-        metaclipR::graph2json(ens$graph, output.file, template = TRUE)
+        metaclipR::graph2json(graph, output.file, template = TRUE)
 
-        # ## Compact file
-        # minified_json <- jsonld::jsonld_compact(output.file, context = context)
-        # write(toJSON(minified_json, pretty = FALSE), output.file)
-
+        ## Prettify
+        prettyJSON(output.file)
     }
 }
 
