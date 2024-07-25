@@ -1,0 +1,292 @@
+{
+  "@context": {
+    "ds": "https://metaclip.org/datasource/datasource.owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/main/ipcc_terms.owl#",
+    "c6i": "https://raw.githubusercontent.com/metaclip/CMIP6/main/CMIP6-institutions.owl#",
+    "c6d": "https://raw.githubusercontent.com/metaclip/CMIP6/main/CMIP6-datasets.owl#",
+    "c6m": "https://raw.githubusercontent.com/metaclip/CMIP6/main/CMIP6-models.owl#",
+    "c6v": "https://raw.githubusercontent.com/metaclip/CMIP6/main/CMIP6-variables.owl#"
+  },
+  "@graph": [
+    {
+      "@id": "c6d:CMIP6.MIROC6.ssp5_3_4os",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "MIROC6.ssp5_3_4os",
+      "ds:hadDatasetSubset": {
+        "@id": "#DatasetSubset.MIROC6.ssp5_3_4os",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "dc:description": "This step entails extracting a logical subset of the MIROC6.ssp5_3_4os Dataset",
+        "ds:wasEnsembleMember": {
+          "@id": "#Ensemble.wubsdr",
+          "@type": "ds:Ensemble",
+          "rdfs:label": "Ensemble construction"
+        },
+        "ds:hasVariable": {
+          "@id": "c6v:CMIP6_SImon-sirdgthick",
+          "@type": "ds:Variable",
+          "rdfs:label": "sirdgthick",
+          "ds:hasTimeFrequency": "monthly"
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.raymni",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "2040-2100",
+          "prov:startedAtTime": "2040-01-16",
+          "prov:endedAtTime": "2100-12-16"
+        },
+        "ds:hasRealization": {
+          "@id": "#MIROC6.ssp5_3_4os.r1i1p1f1",
+          "@type": "ds:Realization",
+          "rdfs:label": "r1i1p1f1"
+        }
+      },
+      "ds:hadSimulationModel": {
+        "@id": "c6m:MIROC6",
+        "@type": "ds:GCM",
+        "rdfs:label": "MIROC6",
+        "ds:hasSeaIceModelComponent": {
+          "@id": "c6m:MIROC6_seaIce_COCO4.9",
+          "@type": "ds:SeaIceModel",
+          "rdfs:label": "COCO4.9"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "c6m:MIROC6_ocean_COCO4.9",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "COCO4.9"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "c6m:MIROC6_aerosol_SPRINTARS6.0",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "SPRINTARS6.0"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "c6m:MIROC6_land_MATSIRO6.0",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "MATSIRO6.0"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "c6m:MIROC6_atmos_CCSR-AGCM",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "CCSR-AGCM"
+        }
+      },
+      "ds:hadModellingCenter": {
+        "@id": "c6i:MIROC",
+        "@type": "ds:ModellingCenter",
+        "rdfs:label": "MIROC"
+      },
+      "ds:hadExperiment": {
+        "@id": "ipcc:SSP534-os",
+        "@type": "ds:Experiment",
+        "rdfs:label": "ssp5_3_4os"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ds:GlobalExtent",
+        "@type": "ds:HorizontalExtent",
+        "rdfs:label": "GlobalExtent"
+      },
+      "ds:hadDataProvider": {
+        "@id": "ds:ESGF",
+        "@type": "ds:DataProvider",
+        "rdfs:label": "ESGF"
+      },
+      "ds:hadProject": {
+        "@id": "ipcc:CMIP6",
+        "@type": "ds:Project",
+        "rdfs:label": "CMIP6"
+      }
+    },
+    {
+      "@id": "c6d:CMIP6.UKESM1-0-LL.ssp5_3_4os",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "UKESM1-0-LL.ssp5_3_4os",
+      "ds:hadDatasetSubset": {
+        "@id": "#DatasetSubset.UKESM1-0-LL.ssp5_3_4os",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "dc:description": "This step entails extracting a logical subset of the UKESM1-0-LL.ssp5_3_4os Dataset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.yloksc",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "2040-2100",
+          "prov:startedAtTime": "2040-01-16",
+          "prov:endedAtTime": "2100-12-16"
+        },
+        "ds:hasRealization": {
+          "@id": "#UKESM1-0-LL.ssp5_3_4os.r1i1p1f2",
+          "@type": "ds:Realization",
+          "rdfs:label": "r1i1p1f2"
+        },
+        "ds:wasEnsembleMember": {
+          "@id": "#Ensemble.wubsdr"
+        },
+        "ds:hasVariable": {
+          "@id": "c6v:CMIP6_SImon-sirdgthick"
+        }
+      },
+      "ds:hadSimulationModel": {
+        "@id": "c6m:UKESM1-0-LL",
+        "@type": "ds:GCM",
+        "rdfs:label": "UKESM1-0-LL",
+        "ds:hasSeaIceModelComponent": {
+          "@id": "c6m:UKESM1-0-LL_seaIce_CICE-HadGEM3-GSI8_eORCA1",
+          "@type": "ds:SeaIceModel",
+          "rdfs:label": "eORCA1"
+        },
+        "ds:hasOceanBgchemModelComponent": {
+          "@id": "c6m:UKESM1-0-LL_ocnBgchem_MEDUSA2",
+          "@type": "ds:OceanBgchemModel",
+          "rdfs:label": "MEDUSA2"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "c6m:UKESM1-0-LL_ocean_NEMO-HadGEM3-GO6.0",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "NEMO-HadGEM3-GO6.0"
+        },
+        "ds:hasAtmosChemModelComponent": {
+          "@id": "c6m:UKESM1-0-LL_atmosChem_UKCA-StratTrop",
+          "@type": "ds:AtmosChemModel",
+          "rdfs:label": "UKCA-StratTrop"
+        },
+        "ds:hasAerosolModelComponent": {
+          "@id": "c6m:UKESM1-0-LL_aerosol_UKCA-GLOMAP-mode",
+          "@type": "ds:AerosolModel",
+          "rdfs:label": "UKCA-GLOMAP-mode"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "c6m:UKESM1-0-LL_land_JULES-ES-1.0",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "JULES-ES-1.0"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "c6m:UKESM1-0-LL_atmos_MetUM-HadGEM3-GA7.1",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "MetUM-HadGEM3-GA7.1"
+        }
+      },
+      "ds:hadModellingCenter": [
+        {
+          "@id": "c6i:NIWA",
+          "@type": "ds:ModellingCenter",
+          "rdfs:label": "NIWA"
+        },
+        {
+          "@id": "c6i:NIMS-KMA",
+          "@type": "ds:ModellingCenter",
+          "rdfs:label": "NIMS-KMA"
+        },
+        {
+          "@id": "c6i:NERC",
+          "@type": "ds:ModellingCenter",
+          "rdfs:label": "NERC"
+        },
+        {
+          "@id": "c6i:MOHC",
+          "@type": "ds:ModellingCenter",
+          "rdfs:label": "MOHC"
+        }
+      ],
+      "ds:hadExperiment": {
+        "@id": "ipcc:SSP534-os"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ds:GlobalExtent"
+      },
+      "ds:hadDataProvider": {
+        "@id": "ds:ESGF"
+      },
+      "ds:hadProject": {
+        "@id": "ipcc:CMIP6"
+      }
+    },
+    {
+      "@id": "c6d:CMIP6.IPSL-CM6A-LR.ssp5_3_4os",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "IPSL-CM6A-LR.ssp5_3_4os",
+      "ds:hadDatasetSubset": {
+        "@id": "#DatasetSubset.IPSL-CM6A-LR.ssp5_3_4os",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "dc:description": "This step entails extracting a logical subset of the IPSL-CM6A-LR.ssp5_3_4os Dataset",
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.qajrow",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "2040-2300",
+          "prov:startedAtTime": "2040-01-16",
+          "prov:endedAtTime": "2300-12-16"
+        },
+        "ds:hasRealization": {
+          "@id": "#IPSL-CM6A-LR.ssp5_3_4os.r1i1p1f1",
+          "@type": "ds:Realization",
+          "rdfs:label": "r1i1p1f1"
+        },
+        "ds:hasVariable": {
+          "@id": "c6v:CMIP6_SImon-sirdgthick"
+        },
+        "ds:wasEnsembleMember": {
+          "@id": "#Ensemble.wubsdr"
+        }
+      },
+      "ds:hadSimulationModel": {
+        "@id": "c6m:IPSL-CM6A-LR",
+        "@type": "ds:GCM",
+        "rdfs:label": "IPSL-CM6A-LR",
+        "ds:hasSeaIceModelComponent": {
+          "@id": "c6m:IPSL-CM6A-LR_seaIce_NEMO-LIM3",
+          "@type": "ds:SeaIceModel",
+          "rdfs:label": "NEMO-LIM3"
+        },
+        "ds:hasOceanBgchemModelComponent": {
+          "@id": "c6m:IPSL-CM6A-LR_ocnBgchem_NEMO-PISCES",
+          "@type": "ds:OceanBgchemModel",
+          "rdfs:label": "NEMO-PISCES"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "c6m:IPSL-CM6A-LR_ocean_NEMO-OPA-eORCA1.3",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "NEMO-OPA-eORCA1.3"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "c6m:IPSL-CM6A-LR_land_ORCHIDEE2.0",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "ORCHIDEE2.0"
+        },
+        "ds:hasAtmosModelComponent": {
+          "@id": "c6m:IPSL-CM6A-LR_atmos_LMDZ",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "LMDZ"
+        }
+      },
+      "ds:hadModellingCenter": {
+        "@id": "c6i:IPSL",
+        "@type": "ds:ModellingCenter",
+        "rdfs:label": "IPSL"
+      },
+      "ds:hadExperiment": {
+        "@id": "ipcc:SSP534-os"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ds:GlobalExtent"
+      },
+      "ds:hadDataProvider": {
+        "@id": "ds:ESGF"
+      },
+      "ds:hadProject": {
+        "@id": "ipcc:CMIP6"
+      }
+    },
+    {
+      "@id": "ds:Copernicus-CMIP6",
+      "@type": "ds:Dataset",
+      "rdfs:label": "Copernicus-CMIP6",
+      "prov:hadPrimarySource": {
+        "@id": "#Ensemble.wubsdr"
+      }
+    }
+  ]
+}
+
