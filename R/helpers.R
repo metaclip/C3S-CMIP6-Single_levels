@@ -1,8 +1,6 @@
 library(magrittr)
 library(metaclipR)  ## >= v1.4.0 ## remotes::install_github("METACLIP/metaclipR")
 library(igraph)
-library(jsonlite)
-library(jsonld)
 
 ## LOAD MASTER TABLES
 master <- read.csv("inst/C3S_CMIP6_single-levels_extended.csv")

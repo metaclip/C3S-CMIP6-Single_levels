@@ -355,7 +355,7 @@ for (i in 1:length(variables)) {
         metaclipR::graph2json(graph, output.file, template = TRUE)
 
         ## Prettify
-        prettyJSON(output.file)
+        metaclipR::prettyJSON(output.file)
     }
 }
 
