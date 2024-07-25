@@ -300,7 +300,7 @@ for (i in 1:length(variables)) {
             tres <- info.gcm$temporal_resolution
             fullvarname <- paste(tres,
                                  info.gcm$variable, sep = "-")
-            ind <- grep(fullvarname, variables.master$fullvarname)
+            ind <- grep(paste0("^", fullvarname, "$"), variables.master$fullvarname)
             varnodename <- paste0("c6v:", variables.master[ind, "varID"])
 
             attr.list <- list("ds:hasTimeFrequency" = tres)
