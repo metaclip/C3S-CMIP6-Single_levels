@@ -82,6 +82,16 @@ for (i in 1:length(variables)) {
                                  getNodeIndexbyName(graph, "ds:ESGF")),
                                label = "ds:hadDataProvider")
 
+            ## SpatialExtent
+            graph <- my_add_vertices(graph,
+                                     name = "ds:GlobalExtent",
+                                     label = "GlobalExtent",
+                                     className = "ds:HorizontalExtent")
+            graph <- add_edges(graph,
+                               c(getNodeIndexbyName(graph, dname),
+                                 getNodeIndexbyName(graph, "ds:GlobalExtent")),
+                               label = "ds:hasHorizontalExtent")
+
             ## Experiment
             exp.nodename <- set.exp.nodename(exp)
             graph <- my_add_vertices(graph,
