@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "ds": "https://metaclip.org/datasource/datasource.owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/main/ipcc_terms.owl#",
+    "c6i": "https://raw.githubusercontent.com/metaclip/CMIP6/main/CMIP6-institutions.owl#",
+    "c6d": "https://raw.githubusercontent.com/metaclip/CMIP6/main/CMIP6-datasets.owl#",
+    "c6m": "https://raw.githubusercontent.com/metaclip/CMIP6/main/CMIP6-models.owl#",
+    "c6v": "https://raw.githubusercontent.com/metaclip/CMIP6/main/CMIP6-variables.owl#"
+  },
+  "@graph": [
+    {
+      "@id": "c6d:CMIP6.EC-EARTH3-VEG-LR.ssp3_7_0",
+      "@type": "ds:MultiDecadalSimulation",
+      "rdfs:label": "EC-EARTH3-VEG-LR.ssp3_7_0",
+      "ds:hadProject": {
+        "@id": "#ipcc:CMIP6",
+        "@type": "ds:Project",
+        "rdfs:label": "CMIP6"
+      },
+      "ds:hadDataProvider": {
+        "@id": "ds:ESGF",
+        "@type": "ds:DataProvider",
+        "rdfs:label": "ESGF"
+      },
+      "ds:hasHorizontalExtent": {
+        "@id": "ds:GlobalExtent",
+        "@type": "ds:HorizontalExtent",
+        "rdfs:label": "GlobalExtent"
+      },
+      "ds:hadExperiment": {
+        "@id": "#ipcc:SSP370",
+        "@type": "ds:Experiment",
+        "rdfs:label": "ssp3_7_0"
+      },
+      "ds:hadModellingCenter": {
+        "@id": "c6i:EC-Earth-Consortium",
+        "@type": "ds:ModellingCenter",
+        "rdfs:label": "EC-Earth-Consortium"
+      },
+      "ds:hadSimulationModel": {
+        "@id": "c6m:EC-Earth3-Veg-LR",
+        "@type": "ds:GCM",
+        "rdfs:label": "EC-Earth3-Veg-LR",
+        "ds:hasAtmosModelComponent": {
+          "@id": "c6m:EC-Earth3-Veg-LR_atmos_IFS",
+          "@type": "ds:AtmosModel",
+          "rdfs:label": "IFS"
+        },
+        "ds:hasLandSurfaceModelComponent": {
+          "@id": "c6m:EC-Earth3-Veg-LR_land_HTESSEL",
+          "@type": "ds:LandSurfaceModel",
+          "rdfs:label": "HTESSEL"
+        },
+        "ds:hasOceanModelComponent": {
+          "@id": "c6m:EC-Earth3-Veg-LR_ocean_NEMO3.6_ORCA1",
+          "@type": "ds:OceanModel",
+          "rdfs:label": "ORCA1"
+        },
+        "ds:hasSeaIceModelComponent": {
+          "@id": "c6m:EC-Earth3-Veg-LR_seaIce_LIM3",
+          "@type": "ds:SeaIceModel",
+          "rdfs:label": "LIM3"
+        }
+      },
+      "ds:hadDatasetSubset": {
+        "@id": "#DatasetSubset.EC-EARTH3-VEG-LR.ssp3_7_0",
+        "@type": "ds:DatasetSubset",
+        "rdfs:label": "DatasetSubset",
+        "dc:description": "This step entails extracting a logical subset of the EC-EARTH3-VEG-LR.ssp3_7_0 Dataset",
+        "ds:hasRealization": {
+          "@id": "#EC-EARTH3-VEG-LR.ssp3_7_0.r1i1p1f1",
+          "@type": "ds:Realization",
+          "rdfs:label": "r1i1p1f1"
+        },
+        "ds:hasValidTemporalPeriod": {
+          "@id": "#TemporalPeriod.kcgnuv",
+          "@type": "ds:TemporalPeriod",
+          "rdfs:label": "2015-2100",
+          "prov:startedAtTime": "2015-01-01",
+          "prov:endedAtTime": "2100-12-31"
+        },
+        "ds:hasVariable": {
+          "@id": "c6v:CMIP6_day-tasmax",
+          "@type": "ds:Variable",
+          "rdfs:label": "tasmax",
+          "ds:hasTimeFrequency": "daily"
+        }
+      }
+    }
+  ]
+}
+
