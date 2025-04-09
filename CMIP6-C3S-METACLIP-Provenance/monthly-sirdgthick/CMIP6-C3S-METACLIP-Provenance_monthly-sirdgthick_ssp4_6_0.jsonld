@@ -15,13 +15,14 @@
       "@id": "c6d:CMIP6.IPSL-CM6A-LR.ssp4_6_0",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "IPSL-CM6A-LR.ssp4_6_0",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.5268",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.IPSL-CM6A-LR.ssp4_6_0",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the IPSL-CM6A-LR.ssp4_6_0 Dataset",
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.hkczfn",
+          "@id": "#Ensemble.ulpmkg",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble construction"
         },
@@ -32,7 +33,7 @@
           "ds:hasTimeFrequency": "monthly"
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tlrxkz",
+          "@id": "#TemporalPeriod.xghsrd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -80,7 +81,7 @@
         "rdfs:label": "IPSL"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP460",
+        "@id": "#ipcc:SSP460",
         "@type": "ds:Experiment",
         "rdfs:label": "ssp4_6_0"
       },
@@ -95,7 +96,7 @@
         "rdfs:label": "ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6",
+        "@id": "#ipcc:CMIP6",
         "@type": "ds:Project",
         "rdfs:label": "CMIP6"
       }
@@ -104,13 +105,14 @@
       "@id": "c6d:CMIP6.MIROC6.ssp4_6_0",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "MIROC6.ssp4_6_0",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.5766",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.MIROC6.ssp4_6_0",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MIROC6.ssp4_6_0 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.mrlzfj",
+          "@id": "#TemporalPeriod.gckvai",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -125,7 +127,7 @@
           "@id": "c6v:CMIP6_SImon-sirdgthick"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.hkczfn"
+          "@id": "#Ensemble.ulpmkg"
         }
       },
       "ds:hadSimulationModel": {
@@ -164,7 +166,7 @@
         "rdfs:label": "MIROC"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP460"
+        "@id": "#ipcc:SSP460"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -173,15 +175,16 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "ds:Copernicus-CMIP6",
       "@type": "ds:Dataset",
       "rdfs:label": "Copernicus-CMIP6",
+      "ds:hasMainURL": "https://doi.org/10.24381/cds.c866074c",
       "prov:hadPrimarySource": {
-        "@id": "#Ensemble.hkczfn"
+        "@id": "#Ensemble.ulpmkg"
       }
     }
   ]
