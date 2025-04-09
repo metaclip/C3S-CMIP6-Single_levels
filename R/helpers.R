@@ -6,7 +6,7 @@ library(igraph)
 master <- read.csv("inst/C3S_CMIP6_single-levels_extended.csv")
 model.comp.master <- read.csv("inst/master_model_components.csv")
 variables.master <- read.csv("inst/master_variables.csv")
-
+doi.master <- read.csv("inst/master_datasets.csv")
 
 #' @title SSP named individual matching
 #' @description
@@ -39,4 +39,23 @@ set.exp.nodename <- function(exp) {
            "ssp4_6_0" = "ipcc:SSP460",
            "ssp5_3_4os" = "ipcc:SSP534-os"
     )
+}
+
+#' @title Get individual dataset DOI
+#' @description Internal helper to retrieve the DOI for a given
+#'  CMIP6 GCM-experiment dataset
+#' @param gcm Character string. GCM label.
+#' @param exp Character string. Experiment.
+#' @note Searches for exact matches in the 'inst/master_datasets' lookup table
+#' @importFrom magrittr extract2
+#' @author juaco
+#' @keywords internal
+
+getDOI <- function(gcm, exp) {
+    doi <- subset(doi.master,
+                  subset = model_ID == gcm & experiment == exp) %>% extract2("doi")
+    if (length(doi) == 0) {
+        stop("DOI not found for model_id '", gcm, "' and experiment '", exp, "'")
+    }
+    return(doi)
 }
