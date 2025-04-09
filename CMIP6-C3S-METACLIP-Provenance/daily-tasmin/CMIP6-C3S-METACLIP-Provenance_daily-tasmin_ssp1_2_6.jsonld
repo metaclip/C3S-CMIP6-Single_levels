@@ -15,13 +15,14 @@
       "@id": "c6d:CMIP6.IITM-ESM.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "IITM-ESM.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.44",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.IITM-ESM.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the IITM-ESM.ssp1_2_6 Dataset",
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx",
+          "@id": "#Ensemble.pyewun",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble construction"
         },
@@ -32,7 +33,7 @@
           "ds:hasTimeFrequency": "daily"
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.ewornu",
+          "@id": "#TemporalPeriod.ufenrs",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2099",
           "prov:startedAtTime": "2015-01-01",
@@ -85,7 +86,7 @@
         "rdfs:label": "CCCR-IITM"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126",
+        "@id": "#ipcc:SSP126",
         "@type": "ds:Experiment",
         "rdfs:label": "ssp1_2_6"
       },
@@ -100,7 +101,7 @@
         "rdfs:label": "ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6",
+        "@id": "#ipcc:CMIP6",
         "@type": "ds:Project",
         "rdfs:label": "CMIP6"
       }
@@ -109,13 +110,14 @@
       "@id": "c6d:CMIP6.HADGEM3-GC31-LL.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "HADGEM3-GC31-LL.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.10849",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.HADGEM3-GC31-LL.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the HADGEM3-GC31-LL.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.qsipjb",
+          "@id": "#TemporalPeriod.kuwemv",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -127,7 +129,7 @@
           "rdfs:label": "r1i1p1f3"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -176,7 +178,7 @@
         }
       ],
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -185,20 +187,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.HADGEM3-GC31-MM.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "HADGEM3-GC31-MM.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.10850",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.HADGEM3-GC31-MM.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the HADGEM3-GC31-MM.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tyfrlb",
+          "@id": "#TemporalPeriod.siqhef",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -210,7 +213,7 @@
           "rdfs:label": "r1i1p1f3"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -250,7 +253,7 @@
         "@id": "c6i:MOHC"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -259,20 +262,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.UKESM1-0-LL.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "UKESM1-0-LL.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.6333",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.UKESM1-0-LL.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the UKESM1-0-LL.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hwsfqo",
+          "@id": "#TemporalPeriod.josecd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -284,7 +288,7 @@
           "rdfs:label": "r1i1p1f2"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -349,7 +353,7 @@
         }
       ],
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -358,20 +362,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.ACCESS-CM2.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "ACCESS-CM2.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.4319",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.ACCESS-CM2.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the ACCESS-CM2.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.btnhkc",
+          "@id": "#TemporalPeriod.swubeg",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -383,7 +388,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -425,7 +430,7 @@
         "rdfs:label": "CSIRO-ARCCSS"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -434,20 +439,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.AWI-CM-1-1-MR.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "AWI-CM-1-1-MR.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.2796",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.AWI-CM-1-1-MR.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the AWI-CM-1-1-MR.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.polyhv",
+          "@id": "#TemporalPeriod.lihwxz",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -459,7 +465,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -496,7 +502,7 @@
         "rdfs:label": "AWI"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -505,20 +511,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.BCC-CSM2-MR.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "BCC-CSM2-MR.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.3028",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.BCC-CSM2-MR.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the BCC-CSM2-MR.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.xoqjmi",
+          "@id": "#TemporalPeriod.aqzpcs",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -530,7 +537,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -567,7 +574,7 @@
         "rdfs:label": "BCC"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -576,20 +583,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.CMCC-ESM2.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "CMCC-ESM2.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.13250",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.CMCC-ESM2.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CMCC-ESM2.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.biwsjr",
+          "@id": "#TemporalPeriod.rukgxc",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -601,7 +609,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -648,7 +656,7 @@
         "rdfs:label": "CMCC"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -657,20 +665,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.CNRM-CM6-1.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "CNRM-CM6-1.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.4184",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.CNRM-CM6-1.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CNRM-CM6-1.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.lfuopj",
+          "@id": "#TemporalPeriod.uwtgqy",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -682,7 +691,7 @@
           "rdfs:label": "r1i1p1f2"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -729,7 +738,7 @@
         "rdfs:label": "CNRM-CERFACS"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -738,20 +747,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.CNRM-CM6-1-HR.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "CNRM-CM6-1-HR.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.4185",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.CNRM-CM6-1-HR.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CNRM-CM6-1-HR.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.wqvegm",
+          "@id": "#TemporalPeriod.bfsalq",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -763,7 +773,7 @@
           "rdfs:label": "r1i1p1f2"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -808,7 +818,7 @@
         "@id": "c6i:CNRM-CERFACS"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -817,20 +827,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.CNRM-ESM2-1.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "CNRM-ESM2-1.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.4186",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.CNRM-ESM2-1.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CNRM-ESM2-1.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.pcysrx",
+          "@id": "#TemporalPeriod.rlihaz",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -842,7 +853,7 @@
           "rdfs:label": "r1i1p1f2"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -892,7 +903,7 @@
         "@id": "c6i:CNRM-CERFACS"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -901,20 +912,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.FGOALS-G3.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "FGOALS-G3.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.3465",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.FGOALS-G3.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the FGOALS-G3.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tqgmaf",
+          "@id": "#TemporalPeriod.ifazem",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -926,7 +938,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -963,7 +975,7 @@
         "rdfs:label": "CAS"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -972,20 +984,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.GFDL-ESM4.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "GFDL-ESM4.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.8684",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.GFDL-ESM4.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the GFDL-ESM4.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fomxph",
+          "@id": "#TemporalPeriod.ouksji",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -997,7 +1010,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1054,7 +1067,7 @@
         "rdfs:label": "NOAA-GFDL"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1063,20 +1076,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.INM-CM4-8.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "INM-CM4-8.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.12325",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.INM-CM4-8.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the INM-CM4-8.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.bxzwcm",
+          "@id": "#TemporalPeriod.uptzvd",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -1088,7 +1102,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1130,7 +1144,7 @@
         "rdfs:label": "INM"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1139,20 +1153,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.INM-CM5-0.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "INM-CM5-0.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.12326",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.INM-CM5-0.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the INM-CM5-0.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zqepod",
+          "@id": "#TemporalPeriod.xfvqly",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -1164,7 +1179,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1204,7 +1219,7 @@
         "@id": "c6i:INM"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1213,20 +1228,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.KIOST-ESM.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "KIOST-ESM.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.11243",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.KIOST-ESM.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the KIOST-ESM.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zokgjl",
+          "@id": "#TemporalPeriod.vktjws",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -1238,7 +1254,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1290,7 +1306,7 @@
         "rdfs:label": "KIOST"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1299,20 +1315,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.MIROC-ES2L.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "MIROC-ES2L.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.5742",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.MIROC-ES2L.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MIROC-ES2L.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.gtfxbi",
+          "@id": "#TemporalPeriod.jaigfb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -1324,7 +1341,7 @@
           "rdfs:label": "r1i1p1f2"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1371,7 +1388,7 @@
         "rdfs:label": "MIROC"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1380,20 +1397,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.MIROC6.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "MIROC6.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.5743",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.MIROC6.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MIROC6.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.bpszog",
+          "@id": "#TemporalPeriod.dwrhki",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -1405,7 +1423,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1445,7 +1463,7 @@
         "@id": "c6i:MIROC"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1454,20 +1472,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.MPI-ESM1-2-LR.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "MPI-ESM1-2-LR.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.6690",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.MPI-ESM1-2-LR.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MPI-ESM1-2-LR.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.jhqgec",
+          "@id": "#TemporalPeriod.khijfp",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -1479,7 +1498,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1546,7 +1565,7 @@
         }
       ],
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1555,20 +1574,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.NORESM2-LM.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "NORESM2-LM.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.8248",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.NORESM2-LM.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the NORESM2-LM.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.dgluvw",
+          "@id": "#TemporalPeriod.mrdnua",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -1580,7 +1600,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1637,7 +1657,7 @@
         "rdfs:label": "NCC"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1646,20 +1666,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.NORESM2-MM.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "NORESM2-MM.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.8250",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.NORESM2-MM.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the NORESM2-MM.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.msyfeo",
+          "@id": "#TemporalPeriod.iaomtb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-01",
@@ -1671,7 +1692,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1726,7 +1747,7 @@
         "@id": "c6i:NCC"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1735,20 +1756,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.CESM2.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "CESM2.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.7746",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.CESM2.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CESM2.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zpowbc",
+          "@id": "#TemporalPeriod.kcmvfs",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2101",
           "prov:startedAtTime": "2015-01-01",
@@ -1760,7 +1782,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1817,7 +1839,7 @@
         "rdfs:label": "NCAR"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1826,20 +1848,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.IPSL-CM6A-LR.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "IPSL-CM6A-LR.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.5262",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.IPSL-CM6A-LR.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the IPSL-CM6A-LR.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.fwuxzj",
+          "@id": "#TemporalPeriod.furxiq",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2300",
           "prov:startedAtTime": "2015-01-01",
@@ -1851,7 +1874,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_day-tasmin"
@@ -1893,7 +1916,7 @@
         "rdfs:label": "IPSL"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1902,20 +1925,21 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "c6d:CMIP6.MRI-ESM2-0.ssp1_2_6",
       "@type": "ds:MultiDecadalSimulation",
       "rdfs:label": "MRI-ESM2-0.ssp1_2_6",
+      "ds:hasMainURL": "https://doi.org/10.22033/ESGF/CMIP6.6909",
       "ds:hadDatasetSubset": {
         "@id": "#DatasetSubset.MRI-ESM2-0.ssp1_2_6",
         "@type": "ds:DatasetSubset",
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MRI-ESM2-0.ssp1_2_6 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.aontue",
+          "@id": "#TemporalPeriod.zvcgtb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2300",
           "prov:startedAtTime": "2015-01-01",
@@ -1930,7 +1954,7 @@
           "@id": "c6v:CMIP6_day-tasmin"
         },
         "ds:wasEnsembleMember": {
-          "@id": "#Ensemble.vamecx"
+          "@id": "#Ensemble.pyewun"
         }
       },
       "ds:hadSimulationModel": {
@@ -1979,7 +2003,7 @@
         "rdfs:label": "MRI"
       },
       "ds:hadExperiment": {
-        "@id": "ipcc:SSP126"
+        "@id": "#ipcc:SSP126"
       },
       "ds:hasHorizontalExtent": {
         "@id": "ds:GlobalExtent"
@@ -1988,15 +2012,16 @@
         "@id": "ds:ESGF"
       },
       "ds:hadProject": {
-        "@id": "ipcc:CMIP6"
+        "@id": "#ipcc:CMIP6"
       }
     },
     {
       "@id": "ds:Copernicus-CMIP6",
       "@type": "ds:Dataset",
       "rdfs:label": "Copernicus-CMIP6",
+      "ds:hasMainURL": "https://doi.org/10.24381/cds.c866074c",
       "prov:hadPrimarySource": {
-        "@id": "#Ensemble.vamecx"
+        "@id": "#Ensemble.pyewun"
       }
     }
   ]
