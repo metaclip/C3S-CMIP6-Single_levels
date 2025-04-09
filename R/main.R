@@ -59,10 +59,13 @@ for (i in 1:length(variables)) {
             dlabel <- paste(gcm, exp, sep = ".")
             dname <- paste("c6d:CMIP6", dlabel, sep = ".")
 
+            ## Dataset DOI (Data property)
+            doi <- getDOI(gcm, exp)
             graph <- my_add_vertices(graph,
                                      name = dname,
                                      label = dlabel,
-                                     className = "ds:MultiDecadalSimulation")
+                                     className = "ds:MultiDecadalSimulation",
+                                     attr = list("ds:hasMainURL" = doi))
 
             ## Project
             graph <- my_add_vertices(graph,
@@ -338,7 +341,8 @@ for (i in 1:length(variables)) {
         graph <- my_add_vertices(ens$graph,
                                  name = "ds:Copernicus-CMIP6",
                                  label = "Copernicus-CMIP6",
-                                 className = "ds:Dataset")
+                                 className = "ds:Dataset",
+                                 attr = list("ds:hasMainURL" = "https://doi.org/10.24381/cds.c866074c"))
         graph <- add_edges(graph,
                            c(getNodeIndexbyName(graph, "ds:Copernicus-CMIP6"),
                              getNodeIndexbyName(graph, ens$parentnodename)),
