@@ -2,7 +2,7 @@ source("R/helpers.R")
 
 ## /////////////////////////////////////////
 
-output.dir = "CMIP6-C3S-METACLIP-Provenance"
+output.dir = "json_ld/variables"
 
 ## ////////////////////////////////////////
 
@@ -75,7 +75,7 @@ for (i in 1:length(variables)) {
             graph <- add_edges(graph,
                                c(getNodeIndexbyName(graph, dname),
                                  getNodeIndexbyName(graph, "ipcc:CMIP6")),
-                               label = "ds:hadProject")
+                               label = "ds:hasProject")
 
             ## Data Provider
             graph <- my_add_vertices(graph,
@@ -85,7 +85,7 @@ for (i in 1:length(variables)) {
             graph <- add_edges(graph,
                                c(getNodeIndexbyName(graph, dname),
                                  getNodeIndexbyName(graph, "ds:ESGF")),
-                               label = "ds:hadDataProvider")
+                               label = "ds:hasDataProvider")
 
             ## SpatialExtent
             graph <- my_add_vertices(graph,
@@ -106,7 +106,7 @@ for (i in 1:length(variables)) {
             graph <- add_edges(graph,
                                c(getNodeIndexbyName(graph, dname),
                                  getNodeIndexbyName(graph, exp.nodename)),
-                               label = "ds:hadExperiment")
+                               label = "ds:hasExperiment")
 
             ## Modelling center
             ind <- grep(paste0("^", gcm, "$"), model.comp.master$gcm,
@@ -124,7 +124,7 @@ for (i in 1:length(variables)) {
                 graph <- add_edges(graph,
                                    c(getNodeIndexbyName(graph, dname),
                                      getNodeIndexbyName(graph, inst.nodename)),
-                                   label = "ds:hadModellingCenter")
+                                   label = "ds:hasModellingCenter")
             }
 
             ## GCM
@@ -137,7 +137,7 @@ for (i in 1:length(variables)) {
             graph <- add_edges(graph,
                                c(getNodeIndexbyName(graph, dname),
                                  getNodeIndexbyName(graph, gcm.nodename)),
-                               label = "ds:hadSimulationModel")
+                               label = "ds:hasSimulationModel")
 
             ## ATMOS
             label <- gsub(".*_", "", model.info$atmos)
@@ -263,7 +263,7 @@ for (i in 1:length(variables)) {
             graph <- add_edges(graph,
                                c(getNodeIndexbyName(graph, dname),
                                  getNodeIndexbyName(graph, dsubname)),
-                               label = paste0("ds:hadDatasetSubset"))
+                               label = paste0("ds:hasDatasetSubset"))
 
             ## REALIZATION
             label <- info.gcm$realization_number
@@ -328,9 +328,8 @@ for (i in 1:length(variables)) {
         ## ENSEMBLE BUILDING ---------------------------------------------------
         ## /////////////////////////////////////////////////////////////////////
 
-        ## Ensemble dataset
-        ens <- metaclipR.Ensemble(graph.list = ds.subset.list,
-                                  disable.command = TRUE)
+        ## Ensemble dataset (requires metaclipR v1.6.1 or higher)
+        ens <- metaclipR.Ensemble2(graph.list = ds.subset.list)
 
         # plot(ens$graph, vertex.size = .25, edge.label.cex = .2, vertex.label.cex = .2)
 
