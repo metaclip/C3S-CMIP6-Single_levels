@@ -1,14 +1,14 @@
 {
   "@context": {
-    "ds": "https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/master/archive/datasource/1.0.0/datasource.owl#",
+    "ds": "https://metaclip.org/vocab/metaclip/datasource/1.0.0/datasource.owl#",
     "prov": "http://www.w3.org/ns/prov#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/refs/heads/main/archive/0.8/ipcc_terms.owl#",
-    "c6i": "https://raw.githubusercontent.com/metaclip/CMIP6/refs/heads/main/archive/CMIP6-institutions/0.0/CMIP6-institutions.owl#",
-    "c6d": "https://raw.githubusercontent.com/metaclip/CMIP6/refs/heads/main/archive/CMIP6-datasets/0.0/CMIP6-datasets.owl#",
-    "c6m": "https://raw.githubusercontent.com/metaclip/CMIP6/refs/heads/main/archive/CMIP6-models/0.0/CMIP6-models.owl#",
-    "c6v": "https://raw.githubusercontent.com/metaclip/CMIP6/refs/heads/main/archive/CMIP6-variables/0.0/CMIP6-variables.owl#",
+    "ipcc": "https://metaclip.org/vocab/IPCC-AR6-Atlas/0.8/ipcc_terms.owl#",
+    "c6i": "https://metaclip.org/vocab/CMIP6/CMIP6-institutions/0.0/CMIP6-institutions.owl#",
+    "c6d": "https://metaclip.org/vocab/CMIP6/CMIP6-datasets/0.0/CMIP6-datasets.owl#",
+    "c6m": "https://metaclip.org/vocab/CMIP6/CMIP6-models/0.0/CMIP6-models.owl#",
+    "c6v": "https://metaclip.org/vocab/CMIP6/CMIP6-variables/0.0/CMIP6-variables.owl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "prov:startedAtTime": {
       "@type": "xsd:dateTime"
@@ -29,7 +29,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CNRM-ESM2-1.ssp4_6_0 Dataset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.gzrutx",
+          "@id": "#Ensemble.sdgify",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble"
         },
@@ -40,7 +40,7 @@
           "ds:hasTimeFrequency": "monthly"
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.phcrta",
+          "@id": "#TemporalPeriod.sumafg",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -129,7 +129,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CANESM5.ssp4_6_0 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.uoexrf",
+          "@id": "#TemporalPeriod.qedmty",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -141,7 +141,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.gzrutx"
+          "@id": "#Ensemble.sdgify"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_Amon-hfls"
@@ -221,7 +221,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the FGOALS-G3.ssp4_6_0 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.xlujdt",
+          "@id": "#TemporalPeriod.labdxt",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -233,7 +233,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.gzrutx"
+          "@id": "#Ensemble.sdgify"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_Amon-hfls"
@@ -293,7 +293,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the GISS-E2-1-G.ssp4_6_0 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.kdjzhp",
+          "@id": "#TemporalPeriod.cfjnqa",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -305,7 +305,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.gzrutx"
+          "@id": "#Ensemble.sdgify"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_Amon-hfls"
@@ -375,7 +375,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the IPSL-CM6A-LR.ssp4_6_0 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.kvejta",
+          "@id": "#TemporalPeriod.uskrml",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -387,7 +387,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.gzrutx"
+          "@id": "#Ensemble.sdgify"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_Amon-hfls"
@@ -452,7 +452,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MIROC6.ssp4_6_0 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.zoiudh",
+          "@id": "#TemporalPeriod.swnaix",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -464,7 +464,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.gzrutx"
+          "@id": "#Ensemble.sdgify"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_Amon-hfls"
@@ -529,7 +529,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MRI-ESM2-0.ssp4_6_0 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hzoukj",
+          "@id": "#TemporalPeriod.cnxswi",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "2015-2100",
           "prov:startedAtTime": "2015-01-16",
@@ -544,7 +544,7 @@
           "@id": "c6v:CMIP6_Amon-hfls"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.gzrutx"
+          "@id": "#Ensemble.sdgify"
         }
       },
       "ds:hasSimulationModel": {
@@ -611,7 +611,7 @@
       "rdfs:label": "Copernicus-CMIP6",
       "ds:hasMainURL": "https://doi.org/10.24381/cds.c866074c",
       "prov:hadPrimarySource": {
-        "@id": "#Ensemble.gzrutx"
+        "@id": "#Ensemble.sdgify"
       }
     }
   ]

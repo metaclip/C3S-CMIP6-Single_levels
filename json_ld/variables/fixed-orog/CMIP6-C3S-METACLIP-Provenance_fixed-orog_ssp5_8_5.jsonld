@@ -1,14 +1,14 @@
 {
   "@context": {
-    "ds": "https://raw.githubusercontent.com/metaclip/ontologies/refs/heads/master/archive/datasource/1.0.0/datasource.owl#",
+    "ds": "https://metaclip.org/vocab/metaclip/datasource/1.0.0/datasource.owl#",
     "prov": "http://www.w3.org/ns/prov#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "ipcc": "https://raw.githubusercontent.com/metaclip/IPCC-AR6-Atlas/refs/heads/main/archive/0.8/ipcc_terms.owl#",
-    "c6i": "https://raw.githubusercontent.com/metaclip/CMIP6/refs/heads/main/archive/CMIP6-institutions/0.0/CMIP6-institutions.owl#",
-    "c6d": "https://raw.githubusercontent.com/metaclip/CMIP6/refs/heads/main/archive/CMIP6-datasets/0.0/CMIP6-datasets.owl#",
-    "c6m": "https://raw.githubusercontent.com/metaclip/CMIP6/refs/heads/main/archive/CMIP6-models/0.0/CMIP6-models.owl#",
-    "c6v": "https://raw.githubusercontent.com/metaclip/CMIP6/refs/heads/main/archive/CMIP6-variables/0.0/CMIP6-variables.owl#",
+    "ipcc": "https://metaclip.org/vocab/IPCC-AR6-Atlas/0.8/ipcc_terms.owl#",
+    "c6i": "https://metaclip.org/vocab/CMIP6/CMIP6-institutions/0.0/CMIP6-institutions.owl#",
+    "c6d": "https://metaclip.org/vocab/CMIP6/CMIP6-datasets/0.0/CMIP6-datasets.owl#",
+    "c6m": "https://metaclip.org/vocab/CMIP6/CMIP6-models/0.0/CMIP6-models.owl#",
+    "c6v": "https://metaclip.org/vocab/CMIP6/CMIP6-variables/0.0/CMIP6-variables.owl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "prov:startedAtTime": {
       "@type": "xsd:dateTime"
@@ -29,7 +29,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the ACCESS-CM2.ssp5_8_5 Dataset",
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav",
+          "@id": "#Ensemble.rqycko",
           "@type": "ds:Ensemble",
           "rdfs:label": "Ensemble"
         },
@@ -41,7 +41,7 @@
           "ds:hasTimeFrequency": "fixed"
         },
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.etxfhc",
+          "@id": "#TemporalPeriod.rpwjke",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -120,7 +120,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the AWI-CM-1-1-MR.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.miskbl",
+          "@id": "#TemporalPeriod.gacnrs",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -132,7 +132,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -192,7 +192,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CESM2.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.jpfrdc",
+          "@id": "#TemporalPeriod.jbkrhe",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -204,7 +204,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -284,7 +284,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CESM2-WACCM.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.qtohry",
+          "@id": "#TemporalPeriod.cyzhpx",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -296,7 +296,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -374,7 +374,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CMCC-CM2-SR5.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.pqisor",
+          "@id": "#TemporalPeriod.yqbcfp",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -386,7 +386,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -451,7 +451,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CMCC-ESM2.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.eovqfl",
+          "@id": "#TemporalPeriod.nxeqlr",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -463,7 +463,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -531,7 +531,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the CANESM5-CANOE.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.wgdqik",
+          "@id": "#TemporalPeriod.tzkvdp",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -543,7 +543,7 @@
           "rdfs:label": "r1i1p2f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -623,7 +623,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the E3SM-1-1.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.aemopc",
+          "@id": "#TemporalPeriod.fystlq",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -635,7 +635,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -717,7 +717,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the GFDL-ESM4.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.bvjewr",
+          "@id": "#TemporalPeriod.mbqkhz",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -729,7 +729,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -809,7 +809,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the INM-CM4-8.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.vhcenf",
+          "@id": "#TemporalPeriod.svwaph",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -821,7 +821,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -886,7 +886,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MCM-UA-1-0.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.mnwfqz",
+          "@id": "#TemporalPeriod.yapjto",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -898,7 +898,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -968,7 +968,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MIROC-ES2L.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.hxoeia",
+          "@id": "#TemporalPeriod.mnulaj",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -980,7 +980,7 @@
           "rdfs:label": "r1i1p1f2"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -1050,7 +1050,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MIROC6.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.tsdmqc",
+          "@id": "#TemporalPeriod.mhucdq",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -1062,7 +1062,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -1125,7 +1125,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MPI-ESM1-2-LR.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.frbjqk",
+          "@id": "#TemporalPeriod.ulroad",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -1137,7 +1137,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -1227,7 +1227,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the MRI-ESM2-0.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.jdvtqk",
+          "@id": "#TemporalPeriod.hiulcx",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -1239,7 +1239,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -1314,7 +1314,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the NORESM2-LM.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.asxldh",
+          "@id": "#TemporalPeriod.noprys",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -1326,7 +1326,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -1406,7 +1406,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the NORESM2-MM.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.qzgoxn",
+          "@id": "#TemporalPeriod.cwaxrb",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -1418,7 +1418,7 @@
           "rdfs:label": "r1i1p1f1"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         },
         "ds:hasVariable": {
           "@id": "c6v:CMIP6_fx-orog"
@@ -1496,7 +1496,7 @@
         "rdfs:label": "DatasetSubset",
         "dc:description": "This step entails extracting a logical subset of the TAIESM1.ssp5_8_5 Dataset",
         "ds:hasValidTemporalPeriod": {
-          "@id": "#TemporalPeriod.pginzo",
+          "@id": "#TemporalPeriod.wnvsei",
           "@type": "ds:TemporalPeriod",
           "rdfs:label": "1850-2300",
           "prov:startedAtTime": "1850-01-01",
@@ -1511,7 +1511,7 @@
           "@id": "c6v:CMIP6_fx-orog"
         },
         "ds:isMemberOf": {
-          "@id": "#Ensemble.zxuhav"
+          "@id": "#Ensemble.rqycko"
         }
       },
       "ds:hasSimulationModel": {
@@ -1573,7 +1573,7 @@
       "rdfs:label": "Copernicus-CMIP6",
       "ds:hasMainURL": "https://doi.org/10.24381/cds.c866074c",
       "prov:hadPrimarySource": {
-        "@id": "#Ensemble.zxuhav"
+        "@id": "#Ensemble.rqycko"
       }
     }
   ]
